@@ -1,0 +1,484 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Educational Globe Consultancy</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+.country-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.country-card{
+width:280px;
+background:white;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+padding:20px;
+text-align:center;
+}
+
+.country-card h3{
+color:#003366;
+}
+
+.flag{
+width:60px;
+margin-bottom:10px;
+}
+
+.universities{
+display:flex;
+justify-content:center;
+gap:15px;
+margin:15px 0;
+}
+
+.universities img{
+width:50px;
+height:50px;
+object-fit:contain;
+}
+
+.country-card button{
+background:#ff6600;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.country-card button:hover{
+background:#e65c00;
+}
+
+.contact{
+padding:60px;
+background:#f4f6f9;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>Educational Globe Consultancy</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#countries">Countries</a>
+<a href="#contact">Contact</a>
+<a href="student-register.html">Student Register</a>
+<a href="consultant-dashboard.html">Consultant Dashboard</a>
+<a href="login.html">Login</a>
+</nav>
+
+</header>
+
+
+<section id="home" class="hero">
+
+<h2>Study Abroad With Expert Guidance</h2>
+
+<p>
+Study abroad with expert guidance from Educational Globe Consultancy. We support students at every stage of their international education journey. From selecting the right country and university to assisting with applications, visa processing, and pre-departure preparation, our experienced consultants provide complete guidance.
+</p>
+
+<button onclick="location.href='student-register.html'">
+Book Free Counselling
+</button>
+
+</section>
+
+
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="card">
+<h3>University Admissions</h3>
+<p>
+Our university admission services help students secure seats in top universities around the world.
+</p>
+</div>
+
+<div class="card">
+<h3>Visa Assistance</h3>
+<p>
+Our visa assistance service ensures that students complete the visa application process with confidence.
+</p>
+</div>
+
+<div class="card">
+<h3>IELTS Coaching</h3>
+<p>
+We provide professional IELTS coaching to help students achieve required scores for international universities.
+</p>
+</div>
+
+</section>
+
+
+
+<section id="countries">
+
+<h2 style="text-align:center">Study Abroad Countries</h2>
+
+<div class="country-container">
+
+
+<div class="country-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" class="flag">
+
+<h3>Germany</h3>
+
+<p></p>
+
+<div class="universities">
+
+
+</div>
+
+<button onclick="location.href='student-register.html'">
+Apply Now
+</button>
+
+</div>
+
+
+
+<div class="country-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" class="flag">
+
+<h3>United Kingdom</h3>
+
+<p></p>
+
+<div class="universities">
+</div>
+
+<button onclick="location.href='student-register.html'">
+Apply Now
+</button>
+
+</div>
+
+
+
+<div class="country-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" class="flag">
+
+<h3>Canada</h3>
+
+<p></p>
+
+<div class="universities">
+
+</div>
+
+<button onclick="location.href='student-register.html'">
+Apply Now
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: info@educationalglobe.com</p>
+<p>Phone: +91 9876543210</p>
+<p>Address: Hyderabad, India</p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Educational Globe Consultancy</p>
+<p>All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Educational Globe Consultancy</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+html{
+  scroll-behavior:smooth;
+}
+
+.country-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.country-card{
+  width:280px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  padding:20px;
+  text-align:center;
+}
+
+.country-card h3{
+  color:#003366;
+}
+
+.flag{
+  width:60px;
+  margin-bottom:10px;
+}
+
+.universities{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  margin:15px 0;
+}
+
+.universities a{
+  text-decoration:none;
+  color:#003366;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.universities a:hover{
+  color:#ff6600;
+  text-decoration:underline;
+}
+
+.country-card button{
+  background:#ff6600;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.country-card button:hover{
+  background:#e65c00;
+}
+
+.contact{
+  padding:60px;
+  background:#f4f6f9;
+  text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Educational Globe Consultancy</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#countries">Countries</a>
+<a href="#contact">Contact</a>
+<a href="student-register.html">Student Register</a>
+<a href="consultant-dashboard.html">Consultant Dashboard</a>
+<a href="login.html">Login</a>
+</nav>
+
+</header>
+
+<section id="home" class="hero">
+
+<h2>Study Abroad With Expert Guidance</h2>
+
+<p>
+Study abroad with expert guidance from Educational Globe Consultancy. We support students at every stage of their international education journey. From selecting the right country and university to assisting with applications, visa processing, and pre-departure preparation, our experienced consultants provide complete guidance.
+</p>
+
+<button onclick="location.href='student-register.html'">
+Book Free Counselling
+</button>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="card">
+<h3>University Admissions</h3>
+<p>
+Our university admission services help students secure seats in top universities around the world.
+</p>
+</div>
+
+<div class="card">
+<h3>Visa Assistance</h3>
+<p>
+Our visa assistance service ensures that students complete the visa application process with confidence.
+</p>
+</div>
+
+<div class="card">
+<h3>IELTS Coaching</h3>
+<p>
+We provide professional IELTS coaching to help students achieve required scores for international universities.
+</p>
+</div>
+
+</section>
+
+<section id="countries">
+
+<h2 style="text-align:center">Study Abroad Countries</h2>
+
+<div class="country-container">
+
+<div class="country-card">
+<img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" class="flag">
+<h3>Germany</h3>
+<div class="universities">
+<a href="https://www.uni-heidelberg.de/en" target="_blank">Heidelberg University</a>
+<a href="https://www.tum.de/en/" target="_blank">Technical University of Munich</a>
+<a href="https://www.lmu.de/en/index.html" target="_blank">LMU Munich</a>
+<a href="https://www.uni-freiburg.de/" target="_blank">University of Freiburg</a>
+</div>
+<button onclick="location.href='student-register.html'">Apply Now</button>
+</div>
+
+
+<div class="country-card">
+<img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" class="flag">
+<h3>United Kingdom</h3>
+<div class="universities">
+<a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a>
+<a href="https://www.cam.ac.uk/" target="_blank">University of Cambridge</a>
+<a href="https://www.imperial.ac.uk/" target="_blank">Imperial College London</a>
+<a href="https://www.lse.ac.uk/" target="_blank">London School of Economics (LSE)</a>
+</div>
+<button onclick="location.href='student-register.html'">Apply Now</button>
+</div>
+
+<div class="country-card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" class="flag">
+<h3>Canada</h3>
+<div class="universities">
+<a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>
+<a href="https://www.ubc.ca/" target="_blank">University of British Columbia</a>
+<a href="https://www.mcgill.ca/" target="_blank">McGill University</a>
+<a href="https://www.mcmaster.ca/" target="_blank">McMaster University</a>
+</div>
+<button onclick="location.href='student-register.html'">Apply Now</button>
+</div>
+
+<div class="country-card">
+<img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" class="flag">
+<h3>USA</h3>
+<div class="universities">
+<a href="https://www.harvard.edu/" target="_blank">Harvard University</a>
+<a href="https://www.mit.edu/" target="_blank">MIT</a>
+<a href="https://www.stanford.edu/" target="_blank">Stanford University</a>
+<a href="https://www.columbia.edu/" target="_blank">Columbia University</a>
+</div>
+<button onclick="location.href='student-register.html'">Apply Now</button>
+</div>
+
+<div class="country-card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg" class="flag">
+<h3>Australia</h3>
+<div class="universities">
+<a href="https://www.sydney.edu.au/" target="_blank">University of Sydney</a>
+<a href="https://www.unimelb.edu.au/" target="_blank">University of Melbourne</a>
+<a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a>
+<a href="https://www.monash.edu/" target="_blank">Monash University</a>
+</div>
+<button onclick="location.href='student-register.html'">Apply Now</button>
+</div>
+
+
+<div class="country-card">
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" class="flag">
+<h3>France</h3>
+<div class="universities">
+<a href="https://www.sorbonne-universite.fr/en" target="_blank">Sorbonne University</a>
+<a href="https://www.sciencespo.fr/en/" target="_blank">Sciences Po</a>
+<a href="https://www.polytechnique.edu/en" target="_blank">École Polytechnique</a>
+<a href="https://www.universite-lyon.fr/" target="_blank">University of Lyon</a>
+</div>
+<button onclick="location.href='student-register.html'">Apply Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: info@educationalglobe.com</p>
+<p>Phone: +91 9876543210</p>
+<p>Address: Hyderabad, India</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Educational Globe Consultancy</p>
+<p>All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
+
+
+

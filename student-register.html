@@ -1,0 +1,313 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+body{
+height:100vh;
+background:linear-gradient(135deg,#003366,#0059b3);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+
+.container{
+background:white;
+padding:40px;
+width:380px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+animation:fadeIn 1s ease;
+}
+
+
+
+.container h2{
+text-align:center;
+margin-bottom:25px;
+color:#003366;
+}
+
+
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group input,
+.input-group select{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+transition:0.3s;
+}
+
+
+
+.input-group input:focus,
+.input-group select:focus{
+border-color:#0059b3;
+box-shadow:0 0 8px rgba(0,89,179,0.3);
+outline:none;
+}
+
+
+
+button{
+width:100%;
+padding:12px;
+background:#ff6600;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+
+
+button:hover{
+background:#ff3300;
+transform:translateY(-2px);
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+
+.container p{
+text-align:center;
+margin-top:15px;
+font-size:14px;
+}
+
+
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+@media(max-width:500px){
+
+.container{
+width:90%;
+padding:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration</h2>
+
+<form>
+
+<div class="input-group">
+<input type="text" placeholder="Full Name" required>
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-group">
+<input type="password" placeholder="Password" required>
+</div>
+
+<div class="input-group">
+<select>
+<option>Select Country</option>
+<option>Germany</option>
+<option>Canada</option>
+<option>UK</option>
+<option>Australia</option>
+<option>USA</option>
+<option>Russia</option>
+</select>
+</div>
+
+<button>Register</button>
+<p>Already have an account? <a href="login.html">Login</a></p>
+
+<p><a href="forgot-password.html">Forgot Password?</a></p>
+
+
+
+</form>
+
+</div>
+
+</body>
+</html>
+
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+background:linear-gradient(135deg,#003366,#0059b3);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+padding:40px;
+width:380px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.container h2{
+text-align:center;
+margin-bottom:25px;
+color:#003366;
+}
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group input,
+.input-group select{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#ff6600;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff3300;
+}
+
+.container p{
+text-align:center;
+margin-top:15px;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration</h2>
+
+<form onsubmit="registerUser(event)">
+
+<div class="input-group">
+<input type="text" id="name" placeholder="Full Name" required>
+</div>
+
+<div class="input-group">
+<input type="email" id="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-group">
+<input type="password" id="password" placeholder="Password" required>
+</div>
+
+<div class="input-group">
+<select id="country">
+<option value="">Select Country</option>
+<option>Germany</option>
+<option>Canada</option>
+<option>UK</option>
+<option>Australia</option>
+<option>USA</option>
+<option>Russia</option>
+</select>
+</div>
+
+<button type="submit">Register</button>
+
+<p>Already have an account? <a href="login.html">Login</a></p>
+
+<p><a href="forgot-password.html">Forgot Password?</a></p>
+
+</form>
+
+</div>
+
+<script>
+
+function registerUser(e){
+e.preventDefault()
+
+let name=document.getElementById("name").value
+let email=document.getElementById("email").value
+let password=document.getElementById("password").value
+let country=document.getElementById("country").value
+
+// Save data
+localStorage.setItem("userName", name)
+localStorage.setItem("userEmail", email)
+localStorage.setItem("userPassword", password)
+localStorage.setItem("userCountry", country)
+
+alert("Registration Successful ✅")
+
+window.location.href="login.html"
+}
+
+</script>
+
+</body>
+</html>
